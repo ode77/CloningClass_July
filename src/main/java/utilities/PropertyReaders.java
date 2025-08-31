@@ -24,7 +24,6 @@ public class PropertyReaders {
     public String getItLearnUrl(){
         return property.getProperty("DEMOItLearnUrl");
     }
-
     public String getBlazeDemo_Url(){
         return property.getProperty("BlazeDemo_Url");
     }

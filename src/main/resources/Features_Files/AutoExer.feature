@@ -28,9 +28,9 @@ Feature:
     Examples:
       | name | email address        | Password | Days | Months   | Years | First name | Last name | Company    | Address  | Country | State  | City       | Zipcode | Mobile Number |
       | solo | odexsolo77@gmail.com | Yahoo77  | 17   | February | 1990  | solomon    | odele     | eledavibes | 60 brega | Canada  | Dublin | Balbriggan | k32     | 0899736888    |
-#      | Alice   | alicesofware@gmail.com | Alijexo   | 24   | September    | 1983  | Ali        | odele     | eledavibes | 60 brega | Canada  | Dublin | Balbriggan | k32     | 0899736888    |
-#      | Yomi    | yomexboss@gmail.com    | Yorrybx   | 25   | January    | 1974  | Yorex      | odele     | eledavibes | 60 brega | Canada  | Dublin | Balbriggan | k32     | 0899736888    |
-#      | Micheal | mixqa70@gmail.com      | Mickohjay | 19   | November    | 1960  | Mickplo    | odele     | eledavibes | 60 brega | Canada  | Dublin | Balbriggan | k32     | 0899736888    |
+      | Alice   | alicesofware@gmail.com | Alijexo   | 24   | September    | 1983  | Ali        | odele     | eledavibes | 60 brega | Canada  | Dublin | Balbriggan | k32     | 0899736888    |
+      | Yomi    | yomexboss@gmail.com    | Yorrybx   | 25   | January    | 1974  | Yorex      | odele     | eledavibes | 60 brega | Canada  | Dublin | Balbriggan | k32     | 0899736888    |
+      | Micheal | mixqa70@gmail.com      | Mickohjay | 19   | November    | 1960  | Mickplo    | odele     | eledavibes | 60 brega | Canada  | Dublin | Balbriggan | k32     | 0899736888    |
 
 #  @AutoExer1
   Scenario Outline: Test Case 2: Login User with correct email and password

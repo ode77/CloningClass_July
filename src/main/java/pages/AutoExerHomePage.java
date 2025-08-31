@@ -11,6 +11,8 @@ private By logoVisible = By.xpath("//div[@class='logo pull-left']");
 private By signUplocator = By.xpath("//a[contains(text(),' Signup / Login')]");
 private By userNameVisible = By.xpath("//a[contains(text(),' Logged in as ')]");
 private By logoutLocator = By.xpath("//a[@href='/logout']");
+private By loggedAsUser = By.xpath("//*[contains(text(),' Logged in as ')]");
+
 
 
 
@@ -39,6 +41,9 @@ public void clickOnCookies(){
     }
     public void clickOnLogoutBtn(){
     driver.findElement(logoutLocator).click();
+    }
+    public String loggedInAsUserIsVisible() {
+        return driver.findElement(loggedAsUser).getText();
     }
 
 }

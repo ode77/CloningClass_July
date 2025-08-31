@@ -13,6 +13,8 @@ public class AutoExerLoginPage {
     WebElement passwordLocator;
     @FindBy(xpath = "//*[@data-qa='login-button']")
     WebElement loginButtonLocator;
+    @FindBy(xpath = "//p[@style='color: red;']")
+    WebElement errorMessageLocator;
 
 
     public AutoExerLoginPage(WebDriver driver) {
@@ -27,5 +29,9 @@ public class AutoExerLoginPage {
     }
     public void clickOnLoginBtn(){
         loginButtonLocator.click();
+    }
+    public String getErrorMessage() {
+        return errorMessageLocator.getText();
+
     }
 }

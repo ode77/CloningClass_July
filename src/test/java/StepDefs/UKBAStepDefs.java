@@ -8,12 +8,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import utilities.PropertyReaders;
+
+import java.io.IOException;
+
+import static StepDefs.Hooks.driver;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
-import static StepDefs.Hooks.driver;
-
-import java.io.IOException;
 
 public class UKBAStepDefs {
 
