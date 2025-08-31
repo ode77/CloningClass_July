@@ -1,4 +1,4 @@
-@AutoExer
+#@AutoExer
 Feature:
   Background:
     Given I am on autoexercise home page
@@ -22,7 +22,6 @@ Feature:
     And Click 'Create Account button'
     Then Verify that 'ACCOUNT CREATED!' is visible
     And Click Continue button
-#    Then Verify that 'Logged in as username' is visible
     Then Verify that Logged as "<name>" is visible
     And I Click LogOut button
 
@@ -33,10 +32,10 @@ Feature:
 #      | Yomi    | yomexboss@gmail.com    | Yorrybx   | 25   | January    | 1974  | Yorex      | odele     | eledavibes | 60 brega | Canada  | Dublin | Balbriggan | k32     | 0899736888    |
 #      | Micheal | mixqa70@gmail.com      | Mickohjay | 19   | November    | 1960  | Mickplo    | odele     | eledavibes | 60 brega | Canada  | Dublin | Balbriggan | k32     | 0899736888    |
 
-  @AutoExer1
+#  @AutoExer1
   Scenario Outline: Test Case 2: Login User with correct email and password
 #    Given I am on autoexercise home page
-#    Then I Verify that home page is visible successfully
+#    Then I Verify that home page is visible
 #    And Click on 'Signup / Login' button
 #    Then I Verify 'Login to your account' is visible
     And I Enter correct "<email address>" and "<password>"
@@ -44,36 +43,39 @@ Feature:
     Examples:
       | email address         | password |
       | odex7@gmail.com | Yahoo777 |
-      | odexsolo007@gmail.com | Yahoo777 |
+
 
 
 #  @AUTOEXE1
-#  Scenario Outline: Test Case 3: Login User with incorrect email and password
+  Scenario Outline: Test Case 3: Login User with incorrect email and password
 #    Given I am on autoexercise home page
-#    Then I Verify that home page is visible successfully
+#    Then I Verify that home page is visible
 #    And Click on 'Signup / Login' button
 #    Then I Verify 'Login to your account' is visible
-#    When Enter incorrect "<email address>" and "<password>"
-#    And I Click login button
-#    Then Verify error respond "<Message>" is visible
+    When Enter incorrect "<email address>" and "<password>"
+    And I Click login button
+    Then Verify error respond "<Message>" is visible
     Examples:
       | email address | password | Message |
       | odex90@gmail.com |Yah70 |Your email or password is incorrect! |
 
 
-  #  @AUTOEXE1
-#  Scenario Outline: TEST CASES 4:
+    @AutoExer
+  Scenario Outline: TEST CASES 4: Verify Documents Uploaded Successful
 #    Given I am on autoexercise home page
 #    Then I Verify that home page is visible successfully
-#    And Click on Contact Us button
-#    And Verify GET IN TOUCH is visible
-#    And Enter "<name>", "<email>", "<subject>" and "<message>"
-#    And I click on choose file to upload document
-#    And Click Submit button
-#    And Click OK button
-#    Then Verify success message 'Success! Your details have been submitted successfully.' is visible
-#    And Click Home button
-#    Then I Verify that home page is visible successfully
-#    Examples:
-#      | name | email                 | subject      | message                             |
-#      | solo | odexsolo007@gmail.com | Order Issues | Please unable to place my order with the payment gateway |
+    And Click on Contact Us button
+    And Verify GET IN TOUCH is visible
+    And Enter "<name>", "<email>", "<subject>" and "<message>"
+      And I Scroll Down to the target element
+#    When I click choose "<File>" to upload
+      And I click on choose file to upload document
+    And Click Submit button
+    And Click OK to accept the Alert button
+    Then Verify success message 'Success! Your details have been submitted successfully.' is visible
+    And Click Home button
+    Then I Verify that home page is visible
+    Examples:
+      | name  | email                 | subject        | message                                                  | File                                                      |
+      | solo  | odexsolo007@gmail.com | Order Issues   | Please unable to place my order with the payment gateway | C:\Users\samod\Downloads\OLUWASHEYI_CV.pdf                |
+      | faith | moshood007@gmail.com  | Payment Issues | Please unable to place my order with the payment gateway | C:\Users\samod\Downloads\SHEYI_ODELEYE_UPDATED.CV_PEN.pdf |
