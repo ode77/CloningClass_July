@@ -11,11 +11,7 @@ import org.junit.runner.RunWith;
         plugin = { "pretty", "html:target/cucumber.html",
                 "json:target/cucumber/cucumber-report.json",
                 "junit:target/cucumber.xml"},
-<<<<<<< Updated upstream
-=======
-//        monochrome = true,
         publish = true,
->>>>>>> Stashed changes
         tags = "@MORTGAGE or @AutoExer or @UKBA_Smoke")
 
 public class TestRunner {
