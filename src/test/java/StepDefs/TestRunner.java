@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         plugin = { "pretty", "html:target/cucumber.html",
                 "json:target/cucumber/cucumber-report.json",
                 "junit:target/cucumber.xml"},
-        tags = "@AutoExer")
+        tags = "@MORTGAGE or @AutoExer or @UKBA_Smoke")
 
 public class TestRunner {
 
