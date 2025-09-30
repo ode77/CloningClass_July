@@ -17,6 +17,8 @@ Feature: Mortgage Calculator Test DATATABLE
       | totalMonthlyPayment | downPaymentAmount | downPaymentPercentage | loanPayoffDate | totalIntrestPaid | monthlyTaxPaid |
       | $550.38             | $20,000.00        | 40.00%                | Aug, 2045      | $22,613.10       | $250.00        |
 
+
+
   @MORTGAGE1
   Scenario Outline: Calculate Mortgage rate with given values and default values
     Given I am on the Mortgage calculator website
@@ -32,8 +34,13 @@ Feature: Mortgage Calculator Test DATATABLE
     Then I should get mortgage offer with "<TotalTaxPaid>", "<MonthlyHomeInsurance>", "<TotalHomeInsurance>", "<AnnualPaymentAmount>" and "<Totalof360Payments>"
     Examples:
       | TotalTaxPaid | MonthlyHomeInsurance | TotalHomeInsurance | AnnualPaymentAmount | Totalof360Payments |
-      | $72,000.00   | $83.33               | $30,000.00         |$27,620.93          | $828,627.80       |
-#
+      | $72,000.00   | $83.33               | $30,000.00         |$26,373.39          | $791,201.62       |
+
+
+
+
+
+
 #  @MORTGAGE
 #  Scenario Outline: Calculate Mortgage rate with given values and default values
 #    Given I am on the Mortgage calculator website

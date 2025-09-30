@@ -1,4 +1,4 @@
-#@AutoExer
+@AutoExer
 Feature:
   Background:
     Given I am on autoexercise home page

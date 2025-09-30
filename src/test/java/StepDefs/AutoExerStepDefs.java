@@ -10,7 +10,7 @@ import utilities.PropertyReaders;
 import java.awt.*;
 import java.io.IOException;
 
-import static StepDefs.Hooks.driver;
+import static StepDefs.Hook.driver;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -31,12 +31,13 @@ public class AutoExerStepDefs {
         } catch (Exception e) {
             System.out.println("No cookie prompt displayed.");
         }
-        assertThat(autoExerHomePage.logoIsVisible(), is(equalTo(true)));
 
         if (autoExerHomePage.logoIsVisible()) {
             System.out.println("Logo is visible on the homepage");
         } else {
             System.out.println("Logo is NOT visible on the homepage");
+
+            assertThat(autoExerHomePage.logoIsVisible(), is(equalTo(true)));
         }
     }
     @Then("I Verify that home page is visible")

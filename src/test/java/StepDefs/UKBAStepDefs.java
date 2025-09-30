@@ -11,7 +11,7 @@ import utilities.PropertyReaders;
 
 import java.io.IOException;
 
-import static StepDefs.Hooks.driver;
+import static StepDefs.Hook.driver;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;

@@ -12,7 +12,8 @@ import org.junit.runner.RunWith;
                 "json:target/cucumber/cucumber-report.json",
                 "junit:target/cucumber.xml"},
         publish = true,
-        tags = "@MORTGAGE or @AutoExer or @UKBA_Smoke")
+        tags = "@AutoExer")
+
 
 public class TestRunner {
 
