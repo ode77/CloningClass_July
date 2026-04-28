@@ -166,13 +166,13 @@ public class AutoExerStepDefs {
     public void iScrollDownToTheTargetElement() {
         autoExerGetInTouchPage.scrollBarToTarget();
     }
-//    @When("I click choose {string} to upload")
-//    public void iClickChooseToUpload(String filePth) throws AWTException {
-//        autoExerGetInTouchPage.enterUploadFile(filePth);
+    @When("I click choose {string} to upload")
+    public void iClickChooseToUpload(String filePth) throws AWTException {
+        autoExerGetInTouchPage.enterUploadFile(filePth);
 //    }
-    @Then("I click on choose file to upload document")
-    public void i_click_on_choose_file_to_upload_document() throws AWTException {
-        autoExerGetInTouchPage.enterUploadFile();
+//    @Then("I click on choose file to upload document")
+//    public void i_click_on_choose_file_to_upload_document() throws AWTException {
+//        autoExerGetInTouchPage.enterUploadFile();
     }
     @And("Click Submit button")
     public void click_submit_button() {

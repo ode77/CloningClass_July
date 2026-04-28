@@ -7,12 +7,12 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/main/resources/Features_Files",
-        glue =   {"StepDefs","Hook"},
+        glue = "StepDefs",
         plugin = { "pretty", "html:target/cucumber.html",
                 "json:target/cucumber/cucumber-report.json",
                 "junit:target/cucumber.xml"},
         publish = true,
-        tags = "@AutoExer")
+        tags = "@UKBA_Smoke")
 
 
 public class TestRunner {

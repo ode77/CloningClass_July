@@ -8,7 +8,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
+
 
 public class DriverManager {
     private static WebDriver driver;
@@ -31,12 +31,11 @@ public class DriverManager {
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();
                     break;
-
-        }
-        driver.manage().window().maximize();
-        driver.manage().deleteAllCookies();
-        driver.manage().timeouts().implicitlyWait(35, TimeUnit.SECONDS);
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+            }
+            driver.manage().window().maximize();
+            driver.manage().deleteAllCookies();
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(35));
+            wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         }
 
         return driver;

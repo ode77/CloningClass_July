@@ -1,4 +1,4 @@
-@AutoExer
+@AutoExer1
 Feature:
   Background:
     Given I am on autoexercise home page
@@ -60,7 +60,7 @@ Feature:
       | odex90@gmail.com |Yah70 |Your email or password is incorrect! |
 
 
-    @AutoExer
+    @AutoExer1
   Scenario Outline: TEST CASES 4: Verify Documents Uploaded Successful
 #    Given I am on autoexercise home page
 #    Then I Verify that home page is visible successfully
@@ -68,14 +68,14 @@ Feature:
     And Verify GET IN TOUCH is visible
     And Enter "<name>", "<email>", "<subject>" and "<message>"
       And I Scroll Down to the target element
-#    When I click choose "<File>" to upload
-      And I click on choose file to upload document
+    When I click choose "<File>" to upload
+#      And I click on choose file to upload document
     And Click Submit button
     And Click OK to accept the Alert button
     Then Verify success message 'Success! Your details have been submitted successfully.' is visible
-    And Click Home button
-    Then I Verify that home page is visible
+#    And Click Home button
+#    Then I Verify that home page is visible
     Examples:
       | name  | email                 | subject        | message                                                  | File                                                      |
-      | solo  | odexsolo007@gmail.com | Order Issues   | Please unable to place my order with the payment gateway | C:\Users\samod\Downloads\OLUWASHEYI_CV.pdf                |
-      | faith | moshood007@gmail.com  | Payment Issues | Please unable to place my order with the payment gateway | C:\Users\samod\Downloads\SHEYI_ODELEYE_UPDATED.CV_PEN.pdf |
+      | solo  | odexsolo007@gmail.com | Order Issues   | Please unable to place my order with the payment gateway | C:\Users\Owner\OneDrive\Documents\Admin Class.zip                |
+      | faith | moshood007@gmail.com  | Payment Issues | Please unable to place my order with the payment gateway | C:\Users\Owner\OneDrive\Documents\Mentor's  Recomendation Letter.pdf |

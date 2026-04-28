@@ -7,7 +7,6 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import javax.swing.*;
 import java.awt.*;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
@@ -71,34 +70,34 @@ public class AutoExerGetInTouchPage {
 
     }
 
-    public void enterUploadFile() throws AWTException {
-        chooseFileLocator.sendKeys("C:\\Users\\samod\\Downloads\\OLUWASHEYI_CV.pdf");
+    public void enterUploadFile(String filePath) throws AWTException {
+//        chooseFileLocator.sendKeys("C:\\Users\\samod\\Downloads\\OLUWASHEYI_CV.pdf");
 
 
 
 
                      // ROBOT METHOD
 
-//        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", chooseFileLocator);
-//
-//        StringSelection fPath = new StringSelection(filePath);
-//        Toolkit.getDefaultToolkit().getSystemClipboard().setContents(fPath, null);
-//
-//        Robot rb = new Robot();
-//        rb.delay(2000);
-//
-//        rb.keyPress(KeyEvent.VK_CONTROL); // PRESS ON CTRL KEY ON KEYBOARD
-//        rb.delay(2000);
-//        rb.keyPress(KeyEvent.VK_V); // PRESS ON CTRL V KEY ON KEYBORD
-//        rb.delay(2000);
-//
-//        rb.keyRelease(KeyEvent.VK_CONTROL);
-//        rb.keyRelease(KeyEvent.VK_V);
-//        rb.delay(2000);
-//
-//        rb.keyPress(KeyEvent.VK_ENTER);
-//        rb.keyRelease(KeyEvent.VK_ENTER);
-//        rb.delay(2000);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", chooseFileLocator);
+
+        StringSelection fPath = new StringSelection(filePath);
+        Toolkit.getDefaultToolkit().getSystemClipboard().setContents(fPath, null);
+
+        Robot rb = new Robot();
+        rb.delay(2000);
+
+        rb.keyPress(KeyEvent.VK_CONTROL); // PRESS ON CTRL KEY ON KEYBOARD
+        rb.delay(2000);
+        rb.keyPress(KeyEvent.VK_V); // PRESS ON CTRL V KEY ON KEYBORD
+        rb.delay(2000);
+
+        rb.keyRelease(KeyEvent.VK_CONTROL);
+        rb.keyRelease(KeyEvent.VK_V);
+        rb.delay(2000);
+
+        rb.keyPress(KeyEvent.VK_ENTER);
+        rb.keyRelease(KeyEvent.VK_ENTER);
+        rb.delay(2000);
 
     }
     public void ClickOnSubmitButton() {

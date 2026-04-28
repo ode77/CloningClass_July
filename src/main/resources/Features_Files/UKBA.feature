@@ -20,11 +20,11 @@ Background:
     And I click on Continue button
     Then I should get a respond "<Message>" as coming to UK
     Examples:
-      | CountryName | Message                               |
-      | Japan       | You’ll need a visa to study in the UK |
-      | Cuba        | You’ll need a visa to study in the UK |
-      | USA         | You’ll need a visa to study in the UK |
-      | Canada      | You’ll need a visa to study in the UK |
+      | CountryName              | Message                               |
+      | Japan                    | You’ll need a visa to study in the UK |
+      | Cuba                     | You’ll need a visa to study in the UK |
+      | United States of America | You’ll need a visa to study in the UK |
+      | Canada                   | You’ll need a visa to study in the UK |
 
 
   Scenario Outline: Nationalities and Tourism
